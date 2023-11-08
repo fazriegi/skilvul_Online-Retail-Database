@@ -41,15 +41,9 @@ CREATE TABLE product_images (
 CREATE TABLE carts (
 	id BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	user_id BIGINT NOT NULL,
-	FOREIGN KEY (user_iD) REFERENCES users(id)
-);
-
-CREATE TABLE cart_items (
-	id BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	cart_id BIGINT NOT NULL,
 	product_id BIGINT NOT NULL,
 	quantity MEDIUMINT,
-	FOREIGN KEY (cart_id) REFERENCES carts(id),
+	FOREIGN KEY (user_iD) REFERENCES users(id),
 	FOREIGN KEY (product_id) REFERENCES products(id)
 );
 

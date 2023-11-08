@@ -227,20 +227,7 @@ VALUES
 (13, 9),
 (14, 9);
 
-INSERT INTO carts (user_id)
-VALUES
-(1),
-(2),
-(3),
-(4),
-(5),
-(6),
-(7),
-(8),
-(9),
-(10);
-
-INSERT INTO cart_items (cart_id, product_id, quantity)
+INSERT INTO carts (user_id, product_id, quantity)
 VALUES
 (2, 14, 1),
 (2, 9, 1),
